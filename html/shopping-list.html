@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Einkaufsliste</title>
+    <link rel="stylesheet" href="/css/shopping-list.css">
+</head>
+
+<body>
+<div class="body-container">
+    <div class="header">
+        <h1>Meine Einkaufsliste</h1>
+    </div>
+
+    <div>
+        <label for="newItem"> Weiterer Artikel </label><br>
+        <input id="newItem" name="newItem" type="text"><br>
+        <button id="addItems" onclick="addItem()">Hinzufügen</button>
+        <button id="delItem" onclick="deleteItem()">Löschen</button>
+        <button onclick="deleteList()">Die Liste löschen</button>
+        <div class="result"></div>
+        <ul id="shopping-list"></ul>
+        <p class="bought">Gekauft: <span id="boughtCount">0</span></p>
+        <p class="notBought">Noch offen: <span id="openCount">0</span></p>
+    </div>
+</div>
+<script src="/js/shopping-list.js"></script>
+</body>
+
+</html>
